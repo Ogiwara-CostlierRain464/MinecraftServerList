@@ -44,7 +44,15 @@ class MinecraftActivity : AppCompatActivity() {
 
     private fun loadView() {
         introduction.text = minecraft.introduction
-        description.loadMarkdown(minecraft.description)
+        //description.loadMarkdown(minecraft.description)
+        description.loadMarkdown(""""
+            |#Hello
+            |br is enabled.<br>
+            |br <br>
+            |br <br>
+            |br <br>
+            |br
+            |""".trimMargin())
         ip.text = minecraft.ip
         port.text = minecraft.port
     }
