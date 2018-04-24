@@ -1,0 +1,58 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Alamofire (4.7.2)
+  - Gryphon (3.1.0)
+  - Siesta (1.3.1):
+    - Siesta/Core (= 1.3.1)
+  - Siesta/Alamofire (1.3.1):
+    - Alamofire (> 4.1)
+    - Siesta/Core
+  - Siesta/Core (1.3.1)
+  - SVProgressHUD (1.1.3)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - Alamofire (~> 4.7)
+  - Gryphon (~> 3.1)
+  - Siesta (~> 1.0)
+  - Siesta/Alamofire (~> 1.0)
+  - SVProgressHUD (~> 1.1.3)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - Alamofire
+    - Gryphon
+    - Siesta
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Gryphon: 4be80ea5cd7f00421915ddce4e5c0e662ab5d5ff
+  Siesta: 47460ba8b964881b7db532a0e640a6c703959c23
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+
+PODFILE CHECKSUM: 44267d907a11437f1a8346d0d42a6bc85e20dc91
+
+COCOAPODS: 1.5.0
