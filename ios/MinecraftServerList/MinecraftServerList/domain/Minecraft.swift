@@ -10,10 +10,7 @@ import Foundation
 import Siesta
 
 struct Minecraft: Codable{
-    let name: String?
-    enum CodingKeys: String,CodingKey{
-        case name
-    }
-    
-    public var description: String { return "Minecraft: \(name)" }
+    var name: String
+    var introduction: String
+    var description: String
 }

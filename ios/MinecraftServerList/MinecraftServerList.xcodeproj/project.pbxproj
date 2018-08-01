@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E4334DFFADF7862D1785DFD /* Pods_MinecraftServerListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62175D10551B643E3E85F43E /* Pods_MinecraftServerListTests.framework */; };
 		60A57C7A1FBD500F995329FE /* Pods_MinecraftServerList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF116E358B457B18E998CF92 /* Pods_MinecraftServerList.framework */; };
+		A59607B35B7D76B56A6A401F /* MinecraftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596083FC25FFFAD6F51979E /* MinecraftViewController.swift */; };
 		C75F8954208C71D70059BD6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F8953208C71D70059BD6B /* AppDelegate.swift */; };
 		C75F8956208C71D70059BD6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F8955208C71D70059BD6B /* ViewController.swift */; };
 		C75F8959208C71D70059BD6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75F8957208C71D70059BD6B /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		C75F8969208C71D80059BD6B /* MinecraftServerListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F8968208C71D80059BD6B /* MinecraftServerListTests.swift */; };
 		C75F8975208C8BFA0059BD6B /* Minecraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F8974208C8BF90059BD6B /* Minecraft.swift */; };
 		C75F8977208C8E4C0059BD6B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F8976208C8E4C0059BD6B /* CustomTableViewCell.swift */; };
+		C7A6FFB32094592E004DFF41 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A6FFB22094592E004DFF41 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,7 @@
 		5052E420A28CC4B95EE82788 /* Pods-MinecraftServerList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinecraftServerList.release.xcconfig"; path = "Pods/Target Support Files/Pods-MinecraftServerList/Pods-MinecraftServerList.release.xcconfig"; sourceTree = "<group>"; };
 		62175D10551B643E3E85F43E /* Pods_MinecraftServerListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinecraftServerListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		672B9F20FE8D351152426AD0 /* Pods-MinecraftServerList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinecraftServerList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MinecraftServerList/Pods-MinecraftServerList.debug.xcconfig"; sourceTree = "<group>"; };
+		A596083FC25FFFAD6F51979E /* MinecraftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinecraftViewController.swift; sourceTree = "<group>"; };
 		B6869C6B3C2794F2787E6310 /* Pods-MinecraftServerListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinecraftServerListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MinecraftServerListTests/Pods-MinecraftServerListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C75F8950208C71D70059BD6B /* MinecraftServerList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinecraftServerList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75F8953208C71D70059BD6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		C75F896A208C71D80059BD6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C75F8974208C8BF90059BD6B /* Minecraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minecraft.swift; sourceTree = "<group>"; };
 		C75F8976208C8E4C0059BD6B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		C7A6FFB22094592E004DFF41 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		EF116E358B457B18E998CF92 /* Pods_MinecraftServerList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinecraftServerList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F223B035C325CA1C3F5206A2 /* Pods-MinecraftServerListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinecraftServerListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MinecraftServerListTests/Pods-MinecraftServerListTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +126,8 @@
 				C75F895C208C71D80059BD6B /* LaunchScreen.storyboard */,
 				C75F895F208C71D80059BD6B /* Info.plist */,
 				C75F8976208C8E4C0059BD6B /* CustomTableViewCell.swift */,
+				A596083FC25FFFAD6F51979E /* MinecraftViewController.swift */,
+				C7A6FFB22094592E004DFF41 /* WebViewController.swift */,
 			);
 			path = MinecraftServerList;
 			sourceTree = "<group>";
@@ -320,9 +326,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C75F8956208C71D70059BD6B /* ViewController.swift in Sources */,
+				C7A6FFB32094592E004DFF41 /* WebViewController.swift in Sources */,
 				C75F8975208C8BFA0059BD6B /* Minecraft.swift in Sources */,
 				C75F8977208C8E4C0059BD6B /* CustomTableViewCell.swift in Sources */,
 				C75F8954208C71D70059BD6B /* AppDelegate.swift in Sources */,
+				A59607B35B7D76B56A6A401F /* MinecraftViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,7 +493,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MinecraftServerList/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ogiwara.minecraft.MinecraftServerList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -500,7 +511,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MinecraftServerList/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ogiwara.minecraft.MinecraftServerList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -516,7 +530,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MinecraftServerListTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ogiwara.minecraft.MinecraftServerListTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -533,7 +551,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MinecraftServerListTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ogiwara.minecraft.MinecraftServerListTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -15,12 +15,19 @@ import Siesta
 class MinecraftServerListTests: XCTestCase {
     
     func testExample() {
-        let github = Github()
-        let req = github.user("Ogiwara-CostlierRain464")
-        req.load()
-        print(req.latestData?.text)
-        
-        
+        let json = """
+        [
+            {
+                "name" : "test"
+            }
+        ]
+        """.data(using: .utf8)!
+
+        let decoder = JSONDecoder()
+        let data = try! decoder.decode(Array<Minecraft>.self, from: json)
+
+        print(data)
+
         assert(true)
     }
     

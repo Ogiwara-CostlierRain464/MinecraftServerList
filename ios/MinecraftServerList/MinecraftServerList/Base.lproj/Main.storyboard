@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,18 +16,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MinecraftServerList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zNJ-0z-pPK">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="nQK-Iy-JtZ" customClass="CustomTableViewCell" customModule="MinecraftServerList" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TableViewCell" id="nQK-Iy-JtZ" customClass="CustomTableViewCell" customModule="MinecraftServerList" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nQK-Iy-JtZ" id="8R1-Oa-HV1">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="119.66666666666667"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCA-fF-Dtq">
@@ -53,6 +53,7 @@
                                         <connections>
                                             <outlet property="introduction" destination="OaU-Hb-i92" id="A3u-EV-TkX"/>
                                             <outlet property="name" destination="CCA-fF-Dtq" id="zMQ-6L-Yv0"/>
+                                            <segue destination="2j0-i9-PEY" kind="show" identifier="ShowMinecraft" id="zuc-Eu-6Gk"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -78,6 +79,114 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+        <!--Minecraft View Controller-->
+        <scene sceneID="tXW-M5-1rb">
+            <objects>
+                <viewController id="2j0-i9-PEY" customClass="MinecraftViewController" customModule="MinecraftServerList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="SecondView" id="8Su-fk-BZX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h63-V8-xlz">
+                                <rect key="frame" x="141.33333333333334" y="119.33333333333333" width="92.666666666666657" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyp-gp-hsg">
+                                <rect key="frame" x="143.66666666666666" y="179.66666666666666" width="87.666666666666657" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="n8c-mt-ffq">
+                                <rect key="frame" x="165" y="69" width="45" height="20.333333333333329"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FVs-au-2gG">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="20.333333333333332"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WhB-p2-Tcz">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="20.333333333333332"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nV0-4d-lIF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="45" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGB-Tj-CLL">
+                                <rect key="frame" x="164.66666666666666" y="207" width="46" height="569"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="g0D-cJ-XbC" kind="show" id="pzy-oe-CQe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h63-V8-xlz" firstAttribute="centerX" secondItem="8Su-fk-BZX" secondAttribute="centerX" id="Bsz-p1-56F"/>
+                            <constraint firstItem="XGB-Tj-CLL" firstAttribute="centerX" secondItem="8Su-fk-BZX" secondAttribute="centerX" id="E3J-l9-K7U"/>
+                            <constraint firstItem="n8c-mt-ffq" firstAttribute="top" secondItem="b6x-qn-FmX" secondAttribute="top" constant="25" id="ESv-Oz-NkI"/>
+                            <constraint firstItem="n8c-mt-ffq" firstAttribute="centerX" secondItem="8Su-fk-BZX" secondAttribute="centerX" id="TBf-Ct-4rs"/>
+                            <constraint firstItem="h63-V8-xlz" firstAttribute="top" secondItem="n8c-mt-ffq" secondAttribute="bottom" constant="30" id="Van-Yj-Xkv"/>
+                            <constraint firstItem="Eyp-gp-hsg" firstAttribute="centerX" secondItem="8Su-fk-BZX" secondAttribute="centerX" id="go5-on-TbO"/>
+                            <constraint firstItem="b6x-qn-FmX" firstAttribute="bottom" secondItem="XGB-Tj-CLL" secondAttribute="bottom" constant="2" id="jos-3k-igz"/>
+                            <constraint firstItem="Eyp-gp-hsg" firstAttribute="top" secondItem="h63-V8-xlz" secondAttribute="bottom" constant="40" id="slQ-pe-hA6"/>
+                            <constraint firstItem="XGB-Tj-CLL" firstAttribute="top" secondItem="Eyp-gp-hsg" secondAttribute="bottom" constant="7" id="xut-wC-1OR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b6x-qn-FmX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4jh-7o-ec8"/>
+                    <connections>
+                        <outlet property="desc" destination="Eyp-gp-hsg" id="VLY-Ta-0ha"/>
+                        <outlet property="intro" destination="h63-V8-xlz" id="0gD-79-3Wv"/>
+                        <outlet property="name" destination="nV0-4d-lIF" id="1tH-MB-QGW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dra-fu-7tJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="34"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="q6K-WJ-WPA">
+            <objects>
+                <viewController id="g0D-cJ-XbC" customClass="WebViewController" customModule="MinecraftServerList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y7d-4Z-FYD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0FU-9w-7Tm">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0FU-9w-7Tm" firstAttribute="top" secondItem="hhA-Mg-qPf" secondAttribute="top" id="LkS-Tp-Oig"/>
+                            <constraint firstItem="hhA-Mg-qPf" firstAttribute="bottom" secondItem="0FU-9w-7Tm" secondAttribute="bottom" id="M7V-i4-Pk8"/>
+                            <constraint firstItem="0FU-9w-7Tm" firstAttribute="leading" secondItem="hhA-Mg-qPf" secondAttribute="leading" id="TIZ-pm-YU2"/>
+                            <constraint firstItem="hhA-Mg-qPf" firstAttribute="trailing" secondItem="0FU-9w-7Tm" secondAttribute="trailing" id="vIp-eF-dCg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hhA-Mg-qPf"/>
+                    </view>
+                    <connections>
+                        <outlet property="web" destination="0FU-9w-7Tm" id="CJ9-EM-QGj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UFx-dm-Sry" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791" y="33"/>
         </scene>
     </scenes>
 </document>

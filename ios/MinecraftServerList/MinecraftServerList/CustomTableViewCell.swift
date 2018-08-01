@@ -9,10 +9,10 @@
 import UIKit
 
 class CustomTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var introduction: UILabel!
-    
+    var model: Minecraft!
     
     override func awakeFromNib() {
         super.awakeFromNib()
